@@ -13,13 +13,14 @@
     "moneda": "ARS",
     "operacion": "alquiler",
     "tipo": "local",
-    "link": "ventanaAparte.html"
+    "link": "ventanaAparte.html",
+    "ubicacion": "Centro"
   },
   {
     "id": 4,
     "titulo": "Departamento Premium Norte",
     "descripcion": "Departamento moderno con vista panorámica y amenities exclusivos.",
-    "imagen": "https://images.unsplash.com/photo-1600585154207-6b1d5b0f94a6?auto=format&fit=crop&w=800&q=80",
+    "imagen": "https://static.tokkobroker.com/pictures/65001828363948074392016455065530289308337755183683788857999751631212963065069.jpg",
     "detalles": {
       "superficie": "95 mts²",
       "dormitorios": 2,
@@ -29,13 +30,14 @@
     "moneda": "USD",
     "operacion": "alquiler",
     "tipo": "departamento",
-    "link": "ventanaAparte.html"
+    "link": "ventanaAparte.html",
+    "ubicacion": "Norte"
   },
   {
     "id": 5,
     "titulo": "Local Comercial Sur",
     "descripcion": "Amplio local en zona de alto tránsito, ideal para negocios.",
-    "imagen": "https://images.unsplash.com/photo-1600585153850-0c44e92b5b1c?auto=format&fit=crop&w=800&q=80",
+    "imagen": "https://miguiaargentina.com.ar/Imagenes/b/783913092-1-alquiler-locales-comerciales.jpeg",
     "detalles": {
       "superficie": "180 mts²",
       "baños": 2,
@@ -45,6 +47,7 @@
     "moneda": "ARS",
     "operacion": "alquiler",
     "tipo": "local",
-    "link": "ventanaAparte.html"
+    "link": "ventanaAparte.html",
+    "ubicacion": "Sur"
   }
 ]
