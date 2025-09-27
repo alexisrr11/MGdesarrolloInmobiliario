@@ -2,82 +2,106 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MG Desarrollo Inmobiliario</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script type="module" src="/detalle.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MG Desarrollo Inmobiliario</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script type="module" src="/detalle.js"></script>
 </head>
 
 <body id="inicio" class="font-sans text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-20">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-700">MG Desarrollo Inmobiliario</h1>
-            <div class="relative flex gap-5">
-                <button id="boton-menu" class="text-3xl border-2 border-gray-900 rounded-full"><i
-                        class='p-1 bx bx-menu'></i></button>
-                <nav id="list-menu"
-                    class="hidden absolute top-[58px] right-[-24px] flex flex-col justify-around gap-5 p-10 h-80 rounded-lg bg-white/90 underline">
-                    <a href="#inicio" class="hover:text-blue-600">Inicio</a>
-                    <a href="#servicios" class="hover:text-blue-600">Servicios</a>
-                    <a href="#proyectos" class="hover:text-blue-600">Proyectos</a>
-                    <a href="#contacto" class="hover:text-blue-600">Contacto</a>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main id="detalle-proyecto" class="max-w-4xl mx-auto py-20 px-6"></main>
-
-<!-- Footer -->
-<footer class="bg-blue-800 text-white pt-10">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 pb-8">
-    
-    <!-- Branding -->
-    <div>
-      <h2 class="text-2xl font-bold mb-4">MG Desarrollo Inmobiliario</h2>
-      <p class="text-gray-300 text-sm">
-        Tu aliado confiable en el mercado inmobiliario. 
-        Proyectos de calidad en venta y alquiler.
-      </p>
-    </div>
-
-    <!-- Navegación -->
-    <div>
-      <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
-      <ul class="space-y-2 text-gray-300">
-        <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
-        <li><a href="#servicios" class="hover:text-white">Servicios</a></li>
-        <li><a href="#proyectos" class="hover:text-white">Proyectos</a></li>
-        <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
-      </ul>
-    </div>
-
-    <!-- Redes sociales -->
-    <div>
-      <h3 class="text-lg font-semibold mb-4">Seguinos</h3>
-      <div class="flex gap-4 text-2xl">
-        <a href="https://wa.me/5491112345678" target="_blank" class="hover:text-green-400"><i class='bx bxl-whatsapp'></i></a>
-        <a href="#" class="hover:text-blue-400"><i class='bx bxl-facebook'></i></a>
-        <a href="#" class="hover:text-pink-400"><i class='bx bxl-instagram'></i></a>
-        <a href="#" class="hover:text-blue-300"><i class='bx bxl-linkedin'></i></a>
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-700">MG Desarrollo Inmobiliario</h1>
+      <div class="relative flex gap-5">
+        <button id="boton-menu" class="text-3xl border-2 border-gray-900 rounded-full"><i
+            class='p-1 bx bx-menu'></i></button>
+        <nav id="list-menu"
+          class="hidden absolute top-[58px] right-[-24px] flex flex-col justify-around gap-5 p-10 h-80 rounded-lg bg-white/90 underline">
+          <a href="#inicio" class="hover:text-blue-600">Inicio</a>
+          <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+          <a href="#mapa" class="hover:text-blue-600">Ubicación</a>
+        </nav>
       </div>
     </div>
+  </header>
+  <main id="detalle-proyecto" class="max-w-4xl mx-auto py-20 px-6"></main>
 
-  </div>
+  <!-- Contacto -->
+  <section id="contacto" class="bg-blue-50 py-12">
+    <div class="container px-2 mx-auto max-w-xl">
+      <h2 class="text-2xl font-bold text-center mb-8">📞 Contactanos</h2>
+      <form class="bg-white p-6 rounded shadow space-y-4" action="" id="form">
+        <input class="w-full border rounded p-2" type="text" name="name" placeholder="Nombre Completo" required>
+        <input class="w-full border rounded p-2" type="email" name="email" placeholder="Email" required>
+        <textarea class="w-full border rounded p-2" rows="4" type="mensaje" name="mensaje required"
+          placeholder="Por favor deje su mensaje aquí..."></textarea>
+        <button class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition" type="submit"
+          name="register" class="btn-sumit">Enviar</button>
+      </form>
+      <a class="hidden" href="mailto:alexis.r4995@gmail.com" id="mailto">mail</a>
+    </div>
+  </section>
 
-  <!-- Copyright -->
-  <div class="bg-blue-900 py-4 text-center text-gray-400 text-sm">
-    <p>&copy; 2025 MG Desarrollo Inmobiliario. Todos los derechos reservados.</p>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white pt-10">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 pb-8">
+
+      <!-- Branding -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">MG Desarrollo Inmobiliario</h2>
+        <p class="text-gray-300 text-sm">
+          Tu aliado confiable en el mercado inmobiliario.
+          Proyectos de calidad en venta y alquiler.
+        </p>
+      </div>
+
+      <!-- Navegación -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
+          <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
+          <li><a href="#mapa" class="hover:text-blue-600">Ubicación</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Seguinos</h3>
+        <div class="flex gap-4 text-2xl">
+          <a href="https://wa.me/5491112345678" target="_blank" class="hover:text-green-400"><i
+              class='bx bxl-whatsapp'></i></a>
+          <a href="#" class="hover:text-blue-400"><i class='bx bxl-facebook'></i></a>
+          <a href="#" class="hover:text-pink-400"><i class='bx bxl-instagram'></i></a>
+          <a href="#" class="hover:text-blue-300"><i class='bx bxl-linkedin'></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mapa -->
+    <div id="mapa" class="w-full h-80 px-6 pb-8">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.968587163183!2d-58.40408306305184!3d-34.75717539786599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2919c1bd6dd%3A0x954451b14c593905!2sB1832%20Lomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1758939553149!5m2!1ses!2sar"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="rounded-xl shadow-lg">
+      </iframe>
+    </div>
+
+    <!-- Copyright -->
+    <div class="bg-blue-900 py-4 text-center text-gray-400 text-sm">
+      <p>&copy; 2025 MG Desarrollo Inmobiliario. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
 
 </body>
