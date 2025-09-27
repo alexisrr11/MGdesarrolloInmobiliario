@@ -13,13 +13,14 @@
     "moneda": "USD",
     "operacion": "venta",
     "tipo": "terreno",
-    "link": "ventanaAparte.html"
+    "link": "ventanaAparte.html",
+    "ubicacion": "Zona norte"
   },
   {
     "id": 7,
     "titulo": "Terreno Industrial Oeste",
     "descripcion": "Lote ubicado en parque industrial con accesos rápidos a autopistas.",
-    "imagen": "https://images.unsplash.com/photo-1600585153522-1b9af8c8e5a4?auto=format&fit=crop&w=800&q=80",
+    "imagen": "https://www.todogalpon.cl/wp-content/uploads/2023/09/foto6-13.jpg",
     "detalles": {
       "superficie": "3000 mts²",
       "zonificacion": "Industrial",
@@ -29,7 +30,8 @@
     "moneda": "USD",
     "operacion": "venta",
     "tipo": "terreno",
-    "link": "ventanaAparte.html"
+    "link": "ventanaAparte.html",
+    "ubicacion": "Oeste"
   },
   {
     "id": 8,
@@ -45,6 +47,7 @@
     "moneda": "USD",
     "operacion": "venta",
     "tipo": "campo",
-    "link": "ventanaAparte.html"
+    "link": "ventanaAparte.html",
+    "ubicacion": "Sur"
   }
 ]
