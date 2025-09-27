@@ -13,7 +13,8 @@
     "moneda": "USD",
     "operacion": "venta",
     "tipo": "departamento",
-    "link": "ventanaAparte.html"
+    "link": "ventanaAparte.html",
+    "ubicacion": "Norte"
   },
   {
     "id": 2,
@@ -29,6 +30,7 @@
     "moneda": "USD",
     "operacion": "venta",
     "tipo": "casa",
-    "link": "ventanaAparte.html"
+    "link": "ventanaAparte.html",
+    "ubicacion": "Sur"
   }
 ]
