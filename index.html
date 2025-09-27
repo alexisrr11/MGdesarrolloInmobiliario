@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MG Desarrollo Inmobiliario</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <link rel="stylesheet" href="/ventanaAparte.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="./index.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="inicio" class="font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-700">MG Desarrollo Inmobiliario</h1>
+      <div class="relative flex gap-5">
+        <button id="boton-menu" class="text-3xl border-2 border-gray-900 rounded-full"><i
+            class='p-1 bx bx-menu'></i></button>
+        <nav id="list-menu"
+          class="hidden absolute top-[58px] right-[-24px] flex flex-col justify-around gap-5 p-10 h-80 rounded-lg bg-white/90 underline">
+          <a href="#inicio" class="hover:text-blue-600">Inicio</a>
+          <a href="#servicios" class="hover:text-blue-600">Servicios</a>
+          <a href="#proyectos" class="hover:text-blue-600">Proyectos</a>
+          <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero con filtros -->
+  <section
+    class="relative bg-[url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center h-screen flex items-center justify-center">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 text-white text-center pt-14 px-6">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Construyendo tu futuro</h2>
+      <p class="mb-6 text-lg">Proyectos inmobiliarios de calidad, a tu medida.</p>
+
+      <!-- Filtros -->
+      <div class="bg-white/10 text-gray-800 p-6 rounded-xl shadow-lg max-w-4xl mx-auto grid gap-4">
+
+        <!-- Operación -->
+        <div>
+          <label for="operacion" class="block text-white text-sm font-semibold mb-2">Operación</label>
+          <select id="operacion" class="bg-black/30 text-white w-full border rounded-lg px-3 py-2">
+            <option value="">Cualquiera</option>
+            <option value="venta">Venta</option>
+            <option value="alquiler">Alquiler</option>
+          </select>
+        </div>
+
+        <!-- Tipo -->
+        <div>
+          <label for="tipo" class="block text-sm text-white font-semibold mb-2">Tipo</label>
+          <select id="tipo" class="bg-black/30 text-white w-full border rounded-lg px-3 py-2">
+            <option value="">Todos</option>
+            <option value="casa">Casa</option>
+            <option value="departamento">Departamento</option>
+            <option value="local">Local comercial</option>
+            <option value="terreno">Terreno o lote</option>
+            <option value="campo">Campo</option>
+            <option value="ph">PH</option>
+          </select>
+        </div>
+
+        <!-- Ubicación -->
+        <div>
+          <label for="ubicacion" class="block text-sm text-white font-semibold mb-2">Ubicación</label>
+          <input type="text" id="ubicacion" placeholder="Ej: Buenos Aires"
+            class="bg-black/30 text-white w-full border rounded-lg px-3 py-2">
+        </div>
+
+        <!-- Botón Buscar -->
+        <div class="flex items-end">
+          <a id="buscar" href="#proyectos"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg inline-block text-center">
+            Buscar
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-20 px-6 bg-gray-100">
+    <h3 class="text-3xl font-bold text-center mb-12 text-blue-700">Destacados</h3>
+    <div id="contenedor-proyectos" class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"></div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-blue-50 py-12">
+    <div class="container px-2 mx-auto max-w-xl">
+      <h2 class="text-2xl font-bold text-center mb-8">📞 Contactanos</h2>
+      <form class="bg-white p-6 rounded shadow space-y-4" action="" id="form">
+        <input class="w-full border rounded p-2" type="text" name="name" placeholder="Nombre Completo" required>
+        <input class="w-full border rounded p-2" type="email" name="email" placeholder="Email" required>
+        <textarea class="w-full border rounded p-2" rows="4" type="mensaje" name="mensaje required"
+          placeholder="Por favor deje su mensaje aquí..."></textarea>
+        <button class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition" type="submit"
+          name="register" class="btn-sumit">Enviar</button>
+      </form>
+      <a class="hidden" href="mailto:alexis.r4995@gmail.com" id="mailto">mail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white pt-10">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 pb-8">
+
+      <!-- Branding -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">MG Desarrollo Inmobiliario</h2>
+        <p class="text-gray-300 text-sm">
+          Tu aliado confiable en el mercado inmobiliario.
+          Proyectos de calidad en venta y alquiler.
+        </p>
+      </div>
+
+      <!-- Navegación -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
+          <li><a href="#servicios" class="hover:text-white">Servicios</a></li>
+          <li><a href="#proyectos" class="hover:text-white">Proyectos</a></li>
+          <li><a href="#contacto" class="hover:text-white">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Seguinos</h3>
+        <div class="flex gap-4 text-2xl">
+          <a href="https://wa.me/5491112345678" target="_blank" class="hover:text-green-400"><i
+              class='bx bxl-whatsapp'></i></a>
+          <a href="#" class="hover:text-blue-400"><i class='bx bxl-facebook'></i></a>
+          <a href="#" class="hover:text-pink-400"><i class='bx bxl-instagram'></i></a>
+          <a href="#" class="hover:text-blue-300"><i class='bx bxl-linkedin'></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mapa -->
+    <div class="w-full h-80 px-6 pb-8">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.968587163183!2d-58.40408306305184!3d-34.75717539786599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2919c1bd6dd%3A0x954451b14c593905!2sB1832%20Lomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1758939553149!5m2!1ses!2sar"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="rounded-xl shadow-lg">
+      </iframe>
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="bg-blue-900 py-4 text-center text-gray-400 text-sm">
+      <p>&copy; 2025 MG Desarrollo Inmobiliario. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5491137659081?text=%C2%A1Hola!%20Estoy%20interasado%20en%20una%20vivienda%20y%20quisiera%20consultar"
+    class="fixed bottom-4 right-4 z-50 text-3xl">
+    <i class='text-white bg-green-600 p-2 rounded-full bx bxl-whatsapp'></i>
+  </a>
+
+
+</body>
+
+</html>

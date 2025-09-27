@@ -1,0 +1,50 @@
+[
+  {
+    "id": 6,
+    "titulo": "Terreno en Zona Norte",
+    "descripcion": "Terreno amplio en zona residencial, ideal para desarrollo de viviendas.",
+    "imagen": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80",
+    "detalles": {
+      "superficie": "1200 mts²",
+      "servicios": ["agua", "luz", "gas"],
+      "esquina": true
+    },
+    "precio": 75000,
+    "moneda": "USD",
+    "operacion": "venta",
+    "tipo": "terreno",
+    "link": "ventanaAparte.html"
+  },
+  {
+    "id": 7,
+    "titulo": "Terreno Industrial Oeste",
+    "descripcion": "Lote ubicado en parque industrial con accesos rápidos a autopistas.",
+    "imagen": "https://images.unsplash.com/photo-1600585153522-1b9af8c8e5a4?auto=format&fit=crop&w=800&q=80",
+    "detalles": {
+      "superficie": "3000 mts²",
+      "zonificacion": "Industrial",
+      "acceso_camiones": true
+    },
+    "precio": 150000,
+    "moneda": "USD",
+    "operacion": "venta",
+    "tipo": "terreno",
+    "link": "ventanaAparte.html"
+  },
+  {
+    "id": 8,
+    "titulo": "Terreno Campo Sur",
+    "descripcion": "Campo agrícola con suelo fértil y acceso directo a ruta.",
+    "imagen": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80",
+    "detalles": {
+      "superficie": "50 hectáreas",
+      "cultivo_apto": ["soja", "maíz", "trigo"],
+      "alambrado": true
+    },
+    "precio": 600000,
+    "moneda": "USD",
+    "operacion": "venta",
+    "tipo": "campo",
+    "link": "ventanaAparte.html"
+  }
+]

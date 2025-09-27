@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "titulo": "Residencial Norte",
+    "descripcion": "Departamentos premium con amenities exclusivos.",
+    "imagen": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
+    "detalles": {
+      "superficie": "1000 mts²",
+      "cochera": true,
+      "dormitorios": 3
+    },
+    "precio": 20000,
+    "moneda": "USD",
+    "operacion": "venta",
+    "tipo": "departamento",
+    "link": "ventanaAparte.html"
+  },
+  {
+    "id": 2,
+    "titulo": "Barrio Privado Sur",
+    "descripcion": "Lotes y casas en un entorno natural y seguro.",
+    "imagen": "https://imgar.zonapropcdn.com/avisos/1/00/54/40/46/03/720x532/1930426338.jpg?isFirstImage=true",
+    "detalles": {
+      "superficie": "800 mts²",
+      "seguridad": "24hs",
+      "club_house": true
+    },
+    "precio": 60000,
+    "moneda": "USD",
+    "operacion": "venta",
+    "tipo": "casa",
+    "link": "ventanaAparte.html"
+  }
+]

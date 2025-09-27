@@ -1,0 +1,50 @@
+[
+  {
+    "id": 3,
+    "titulo": "Oficinas Centro",
+    "descripcion": "Espacios corporativos con diseño de vanguardia.",
+    "imagen": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "detalles": {
+      "superficie": "250 mts²",
+      "cocheras": 2,
+      "privados": 5
+    },
+    "precio": 120000,
+    "moneda": "ARS",
+    "operacion": "alquiler",
+    "tipo": "local",
+    "link": "ventanaAparte.html"
+  },
+  {
+    "id": 4,
+    "titulo": "Departamento Premium Norte",
+    "descripcion": "Departamento moderno con vista panorámica y amenities exclusivos.",
+    "imagen": "https://images.unsplash.com/photo-1600585154207-6b1d5b0f94a6?auto=format&fit=crop&w=800&q=80",
+    "detalles": {
+      "superficie": "95 mts²",
+      "dormitorios": 2,
+      "cochera": 1
+    },
+    "precio": 2500,
+    "moneda": "USD",
+    "operacion": "alquiler",
+    "tipo": "departamento",
+    "link": "ventanaAparte.html"
+  },
+  {
+    "id": 5,
+    "titulo": "Local Comercial Sur",
+    "descripcion": "Amplio local en zona de alto tránsito, ideal para negocios.",
+    "imagen": "https://images.unsplash.com/photo-1600585153850-0c44e92b5b1c?auto=format&fit=crop&w=800&q=80",
+    "detalles": {
+      "superficie": "180 mts²",
+      "baños": 2,
+      "deposito": true
+    },
+    "precio": 80000,
+    "moneda": "ARS",
+    "operacion": "alquiler",
+    "tipo": "local",
+    "link": "ventanaAparte.html"
+  }
+]
